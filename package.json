@@ -1,0 +1,42 @@
+{
+  "name": "otp-resend-timer",
+  "version": "0.1.0",
+  "author": "raeeznazar",
+  "description": "A countdown hook and a prop-driven resend-timer component for OTP flows in React Native. No bundled UI opinions, no i18n lock-in.",
+  "main": "lib/commonjs/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/*.test.*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf lib"
+  },
+  "keywords": [
+    "react-native",
+    "otp",
+    "countdown",
+    "resend-timer",
+    "expo"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "22.22.3"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.73"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-native": "^0.74.0",
+    "typescript": "^5.4.0"
+  }
+}
